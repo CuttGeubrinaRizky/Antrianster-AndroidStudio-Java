@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="poliklinik">
+        <item>Poli Kebidanan</item>
+        <item>Poli Pediatrik</item>
+        <item>Poli Cardiologist</item>
+        <item>Poli Bedah</item>
+        <item>Poli Paru</item>
+        <item>Poli THT</item>
+        <item>Poli Mata</item>
+        <item>Poli Kulit dan Kilamin</item>
+    </string-array>
+</resources>
