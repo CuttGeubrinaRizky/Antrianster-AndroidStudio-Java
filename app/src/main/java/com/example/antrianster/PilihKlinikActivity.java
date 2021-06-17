@@ -18,6 +18,7 @@ public class PilihKlinikActivity extends AppCompatActivity {
     private Spinner spinner;
     private EditText editTextDate;
     private DatePickerDialog.OnDateSetListener listener;
+    private int antrian;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,7 @@ public class PilihKlinikActivity extends AppCompatActivity {
 
         spinner = findViewById(R.id.spinner);
         editTextDate = findViewById(R.id.editTextDate);
+        antrian = 0;
 
         Calendar calendar = Calendar.getInstance();
         final int year = calendar.get(Calendar.YEAR);
@@ -55,7 +57,9 @@ public class PilihKlinikActivity extends AppCompatActivity {
     }
 
     public void btnKirim(View view) {
+        this.antrian++;
         Intent intent = new Intent (PilihKlinikActivity.this, NomorAntrianActivity.class);
+        intent.putExtra("Nomor Antrian", this.antrian);
         startActivity(intent);
     }
 }
